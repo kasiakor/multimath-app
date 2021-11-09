@@ -1,4 +1,5 @@
 function startGame() {
+    //start new game
     var messagesElement = document.getElementById("messages");
     messagesElement!.innerText = "Welcome to MultiMath, Let's start a new game!";
 }
