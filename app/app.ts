@@ -45,3 +45,16 @@ function logError(err: string) {
 }
 
 document.getElementById("startGame")!.addEventListener("click", startGame);
+
+let myResult: Result = {
+    playerName: "Gia",
+    score: 12,
+    problemCount: 8,
+    factor: 2
+
+};
+
+let player:Person = {
+    name: "Daniel",
+    formatName: () => "Dan"
+};
