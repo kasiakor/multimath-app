@@ -1,7 +1,7 @@
 module.exports = {
   entry: './js/app.js',
   // devtool: 'inline-source-map',
-  // mode: 'development',
+  mode: 'development',
   // module: {
   //   rules: [
   //     {

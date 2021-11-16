@@ -46,15 +46,25 @@ function logError(err: string) {
 
 document.getElementById("startGame")!.addEventListener("click", startGame);
 
-let myResult: Result = {
-    playerName: "Gia",
-    score: 12,
-    problemCount: 8,
-    factor: 2
+const firstPlayer: Player = new Player();
+firstPlayer.name = "Giovanna";
+console.log(firstPlayer.formatName());
 
-};
 
-let player:Person = {
-    name: "Daniel",
-    formatName: () => "Dan"
-};
+
+
+
+// let myResult: Result = {
+//     playerName: "Gia",
+//     score: 12,
+//     problemCount: 8,
+//     factor: 2
+
+// };
+
+
+// //implement the interface with an object literal
+// let player:Person = {
+//     name: "Daniel",
+//     formatName: () => "Dan"
+// };
