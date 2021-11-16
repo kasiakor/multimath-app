@@ -1,5 +1,14 @@
+"use strict";
+var Player = (function () {
+    function Player() {
+    }
+    Player.prototype.formatName = function () {
+        return this.name.toUpperCase();
+    };
+    ;
+    return Player;
+}());
 function startGame() {
-    //start new game
     var playersName = getInputValue("playername");
     logPlayer(playersName);
     postScore(100, playersName);
@@ -39,14 +48,4 @@ document.getElementById("startGame").addEventListener("click", startGame);
 var firstPlayer = new Player();
 firstPlayer.name = "Giovanna";
 console.log(firstPlayer.formatName());
-// let myResult: Result = {
-//     playerName: "Gia",
-//     score: 12,
-//     problemCount: 8,
-//     factor: 2
-// };
-// //implement the interface with an object literal
-// let player:Person = {
-//     name: "Daniel",
-//     formatName: () => "Dan"
-// };
+//# sourceMappingURL=app.js.map
